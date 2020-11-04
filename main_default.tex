@@ -1,0 +1,75 @@
+\input{preamble}
+
+%%%%%%%%%%%%   Variable intialization   %%%%%%%%%%%%%
+\newcommand{\varlogo}{opening/Logo_FIM_farbig_EN.pdf_tex}
+\newcommand{\vartitle}{Computational Invariant Theory for Finite Matrix Groups}
+\newcommand{\vartype}{Bachelor Thesis}
+\newcommand{\varauthor}{Bernhard Andraschko}
+\newcommand{\varsupervisor}{Prof.~Dr.~Martin Kreuzer}
+\newcommand{\varinstitute}{Chair of Symbolic Computation}
+\newcommand{\vardate}{July 29, 2020}
+\title{\vartitle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%   Document   %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% opening starts here
+
+\input{opening/titlepage}
+
+% roman page numbering starts here
+\pagenumbering{roman}
+
+\input{opening/declaration}
+\clearpage
+\input{opening/acknowledgements}
+% uncomment if abstract is needed
+% \clearpage
+% \include{opening/abstract}
+
+\clearpage
+
+% table of contents
+\pagestyle{empty}
+\tableofcontents
+
+\clearpage
+\pagestyle{fancy}
+% page number arabic for main content
+\pagenumbering{arabic}
+
+% main content starts here
+\input{content/1}
+\clearpage
+\input{content/2}
+% \clearpage
+% \input{content/3}
+% ...
+
+% references after content
+\newpage
+\addcontentsline{toc}{section}{References}
+\bibliography{literatur2}
+
+% list of figures
+%\newpage
+%\addcontentsline{toc}{section}{List of Figures}
+%\listoffigures
+
+\newpage
+
+% appendix starts here
+\appendix
+\input{appendix/1}
+\clearpage
+\input{appendix/2}
+% \clearpage
+% \input{appendix/3}
+% ...
+
+\end{document}
