@@ -16,8 +16,6 @@
 \usepackage{listings}                   % For writing code
 \usepackage{tikz}                       % Tikz ist kein Zeichenprogramm
 \usepackage{svg}                        % For including svg files
-\usepackage{babelbib}                   % Bibliography
-\bibliographystyle{unsrt}               % also bib, may change later
 \usepackage{stmaryrd}                   % For \longarrownot\longrightarrow
 \usepackage{hyperref}                   % For interlinks in references
 
@@ -37,11 +35,54 @@
 \fancyfoot[C]{}
 
 
-%%%%%%%%%%%  Set code font to \texttt  %%%%%%%%%%%%
+%%%%%%%%%%%%%      Bibliography      %%%%%%%%%%%%%%
 
+%% WARNING: DOES NOT WORK YET!!!!!
+\usepackage{babelbib}                   % Bibliography
+% \bibliographystyle{unsrt}               % also bib, may change later
+
+
+
+%%%%%%%%%%%    Peter's CoCoA listing    %%%%%%%%%%%
+
+\definecolor{altorange}{HTML}{F29300}
+\definecolor{codeblue}{rgb}{0.13,0.13,1}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95, 0.95, 0.92}
+
+\lstdefinelanguage{CoCoA}{
+  morekeywords={Alias, Block, Break, Ciao, Continue, Define, Describe, Do, Elif, Else, End, EndBlock, EndTry, EndDefine, EndFor, EndForeach, EndIf, EndPackage, EndRepeat, EndUsing, EndWhile, Eof, False, For, Foreach, Global, Help, If, In, IsIn, NewLine, Not, On, Or, Package, Print, PrintLn, Quit, Repeat, Record, Return, Skip, Source, Step, Then, Time, To, True, Unset, Until, use, Using, Var, While, QQ, ZZ, BOOL, DegLex, DegRevLex, DEVICE, ERROR, FUNCTION, IDEAL, INT, Lex, MAT, MODULE, NULL, Null, PANEL, POLY, PosTo, RAT, RATFUN, RING, STRING, TAGGED, ToPos, TYPE, MODULEELEM, Xel, ZMOD},
+  sensitive=false,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]"
+}
+  
 \lstset{
-	basicstyle=\ttfamily,
-	columns=fullflexible,
+  backgroundcolor=\color{backcolour},
+  commentstyle=\color{codegray},
+  keywordstyle=\color{codeblue},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codegreen},
+  basicstyle=\ttfamily\fontsize{9}{12}\selectfont{},
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  columns=fullflexible,
+  keepspaces=true,
+  language=CoCoA,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2,
+  xleftmargin=1cm,
+  xrightmargin=8mm,
+  literate={~} {$\sim$}{1},
+  literate={*}{{\char42}}1 {-}{{\char45}}1 {^}{{\char94}}1,
 }
 
 

@@ -2,12 +2,12 @@
 
 %%%%%%%%%%%%   Variable intialization   %%%%%%%%%%%%%
 \newcommand{\varlogo}{opening/Logo_FIM_farbig_EN.pdf_tex}
-\newcommand{\vartitle}{Computational Invariant Theory for Finite Matrix Groups}
+\newcommand{\vartitle}{Thesis Title}
 \newcommand{\vartype}{Bachelor Thesis}
-\newcommand{\varauthor}{Bernhard Andraschko}
-\newcommand{\varsupervisor}{Prof.~Dr.~Martin Kreuzer}
-\newcommand{\varinstitute}{Chair of Symbolic Computation}
-\newcommand{\vardate}{July 29, 2020}
+\newcommand{\varauthor}{Author Name}
+\newcommand{\varsupervisor}{Prof.~Dr.~Firstname~Surname}
+\newcommand{\varinstitute}{Chair of LaTeX Templates}
+\newcommand{\vardate}{\today}
 \title{\vartitle}
 
 
@@ -22,8 +22,8 @@
 
 \input{opening/titlepage}
 
-% roman page numbering starts here
-\pagenumbering{roman}
+
+\pagenumbering{roman} % roman page numbering starts here
 
 \input{opening/declaration}
 \clearpage
@@ -40,34 +40,33 @@
 
 \clearpage
 \pagestyle{fancy}
-% page number arabic for main content
-\pagenumbering{arabic}
+\pagenumbering{arabic} % page number arabic for main content
 
 % main content starts here
-\input{content/1}
-\clearpage
-\input{content/2}
-% \clearpage
-% \input{content/3}
+\include{content/1}
+\include{content/2}
+% \include{content/3}
 % ...
+
+
+
 
 % references after content
 \newpage
 \addcontentsline{toc}{section}{References}
-\bibliography{literatur2}
+\bibliography{literatur}
 
 % list of figures
 %\newpage
 %\addcontentsline{toc}{section}{List of Figures}
 %\listoffigures
 
-\newpage
+
 
 % appendix starts here
-\appendix
-\input{appendix/1}
-\clearpage
-\input{appendix/2}
+%\appendix
+\include{appendix/1}
+\include{appendix/2}
 % \clearpage
 % \input{appendix/3}
 % ...
