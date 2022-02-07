@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%   Preamble   %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[titlepage,11pt,a4paper]{article}
+\documentclass[titlepage,11pt,a4paper]{article} % add twoside to optionals if thesis is printed two-sided
 
 \usepackage[utf8]{inputenc}             % For äöüß etc.
 \usepackage{csquotes}                   % Recommended for babel package
@@ -20,15 +20,17 @@
 \usepackage{svg}                        % For including svg files
 \usepackage{stmaryrd}                   % For \longarrownot\longrightarrow
 \usepackage{hyperref}                   % For interlinks in references
+\usepackage{relsize}                    % For \mathlarger
+\usepackage{emptypage}                  % makes \pagestyle{empty} if \cleardoubleside skips one page
+\usepackage{comment}
 
 %%%%%%%%%%%%%         Header         %%%%%%%%%%%%%%
 
 \pagestyle{fancy}
 \addtolength{\headheight}{\baselineskip}
-\fancyhead[R]{\textsl{\thepage}}
-\fancyhead[L]{\textsl{\leftmark}}
-%\fancyhead[LE,RO]{\textsl{\thepage}}
-%\fancyhead[LO,RE]{\textsl{\leftmark}}
+\fancyhead[LE,RO]{\textsl{\thepage}}
+\fancyhead[RE]{\textsl{\rightmark}}
+\fancyhead[LO]{\textsl{\leftmark}}
 \renewcommand{\headrulewidth}{0.4pt}
 
 %%%%%%%%%%%%%         Footer         %%%%%%%%%%%%%%
@@ -138,36 +140,35 @@
 \newcommand{\hn}{\operatorname{hn}}     	
 \newcommand{\mult}{\operatorname{mult}}
 \newcommand{\LT}{\operatorname{LT}}     	
-\newcommand{\LM}{\operatorname{LM}}	
-\newcommand{\IG}{\mathcal{I}_G}
+\newcommand{\LM}{\operatorname{LM}}
 \newcommand{\MS}{\operatorname{MS}}     	
 \newcommand{\LC}{\operatorname{LC}}
 \newcommand{\GL}{\operatorname{GL}}     	
 \newcommand{\NR}{\operatorname{NR}}
 \newcommand{\id}{\operatorname{id}}		
 \newcommand{\End}{\operatorname{End}}
-\newcommand{\ord}{\operatorname{ord}}	
-\newcommand{\rey}{\varrho}
+\newcommand{\ord}{\operatorname{ord}}
 \newcommand{\calA}{{\mathcal{A}}}
-\newcommand{\isom}{\cong}
 \newcommand{\calB}{{\mathcal{B}}}
 \newcommand{\calC}{{\mathcal{C}}}
 \newcommand{\calI}{{\mathcal{I}}}
 \newcommand{\Rel}{{\operatorname{Rel}}}
 \newcommand{\Mat}{{\operatorname{Mat}}}
-\newcommand{\tr}{^{\rm tr}} % transposed matrix
-\newcommand{\trace}{{\rm trace}}
-\renewcommand{\det}{{\rm det}}
-\newcommand{\characteristic}{{\rm char}}
-%\newcommand{\rewrite}[1]{{\,\stackrel{#1}{\longrightarrow}_{\rm s}\,}}
-%\newcommand{\nrewrite}[1]{{\,\stackrel{#1}{\longarrownot\longrightarrow}_{\rm s}\,}}
-%\newcommand{\rewriteequiv}[1]{{\,\stackrel{#1}{\longleftrightarrow}_{\rm s}\,}}
-%\newcommand{\reductionstep}[1]{{\,\stackrel{#1}{\longrightarrow}_{\rm ss}\,}}
-\newcommand{\rewrite}[1]{{\,{\xrightarrow{\mathmakebox[0.5cm]{#1}}}_{\rm s}\,}}
-\newcommand{\nrewrite}[1]{{\,{\longarrownot\xrightarrow{\mathmakebox[0.5cm]{#1}}}_{\rm s}\,}}
-\newcommand{\rewriteequiv}[1]{{\,{\xleftrightarrow{\mathmakebox[0.5cm]{#1}}}_{\rm s}\,}}
-\newcommand{\reductionstep}[1]{{\,{\xrightarrow{\mathmakebox[0.5cm]{#1}}}_{\rm ss}\,}}
+\newcommand{\tr}{^\operatorname{tr}} % transposed matrix
+\newcommand{\trace}{\operatorname{trace}}
+\renewcommand{\det}{\operatorname{det}}
+\newcommand{\Zeros}{\mathcal{Z}}
+\newcommand{\lxor}{\mathop{\raisebox{0.5pt}{$\oplus$}}}
+\newcommand{\LXOR}{\mathop{\raisebox{-1pt}{$\mathlarger{\mathlarger{\mathlarger{\lxor}}}$}}} % somewhere between \oplus and \bigoplus
+\newcommand{\LAND}{\bigwedge}
+\newcommand{\LOR}{\bigvee}
+\newcommand{\liff}{\leftrightarrow}
+\newcommand{\limplies}{\rightarrow}
+\newcommand{\limpliedby}{\leftarrow}
+\newcommand{\textmk}[1]{\textsl{#1}}
 
+% font size
+\newcommand{\size}[1]{\fontsize{#1}{0}\selectfont{}}
 
 % Inserts an empty page
 \newcommand{\emptypage}{\newpage\null\thispagestyle{empty}\newpage}

@@ -23,28 +23,31 @@
 \input{opening/titlepage}
 
 
+\cleardoublepage % clears double page if page number is odd
 \pagenumbering{roman} % roman page numbering starts here
 
 \input{opening/declaration}
-\clearpage
+\cleardoublepage
 \input{opening/acknowledgements}
 % uncomment if abstract is needed
-% \clearpage
+% \cleardoublepage
 % \include{opening/abstract}
 
-\clearpage
 
 % table of contents
+\cleardoublepage
 \pagestyle{empty}
 \tableofcontents
 
-\clearpage
+\cleardoublepage
 \pagestyle{fancy}
 \pagenumbering{arabic} % page number arabic for main content
 
 % main content starts here
 \include{content/1}
+\cleardoublepage
 \include{content/2}
+% \cleardoublepage
 % \include{content/3}
 % ...
 
@@ -52,20 +55,23 @@
 
 
 % references after content
-\newpage
+\cleardoublepage
 \addcontentsline{toc}{section}{References}
 \printbibliography
 
+
 % list of figures
-%\newpage
-%\addcontentsline{toc}{section}{List of Figures}
-%\listoffigures
+% \cleardoublepage
+% \addcontentsline{toc}{section}{List of Figures}
+% \listoffigures
 
 
 
 % appendix starts here
-%\appendix
+\cleardoublepage
+\appendix
 \include{appendix/1}
+\cleardoublepage
 \include{appendix/2}
 % \clearpage
 % \input{appendix/3}
