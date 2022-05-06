@@ -1,0 +1,14 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Notations}{ii}{section*.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}First section}{1}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Second section}{2}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{3}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}First Appendix}{4}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Second Appendix}{5}{appendix.B}%

@@ -26,12 +26,10 @@
 \cleardoublepage % clears double page if page number is odd
 \pagenumbering{roman} % roman page numbering starts here
 
-\input{opening/declaration}
-\cleardoublepage
 \input{opening/acknowledgements}
-% uncomment if abstract is needed
-% \cleardoublepage
-% \include{opening/abstract}
+
+\cleardoublepage
+\include{opening/abstract}
 
 
 % table of contents
@@ -40,8 +38,12 @@
 \tableofcontents
 
 \cleardoublepage
+\include{content/notation}
+
+\cleardoublepage
 \pagestyle{fancy}
 \pagenumbering{arabic} % page number arabic for main content
+\setcounter{page}{1}
 
 % main content starts here
 \include{content/1}
@@ -76,5 +78,12 @@
 % \clearpage
 % \input{appendix/3}
 % ...
+
+
+
+
+\cleardoublepage
+\pagestyle{empty}
+\input{opening/declaration}
 
 \end{document}

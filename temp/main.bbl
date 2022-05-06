@@ -1,0 +1,146 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{satattack}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cdc46c6e93652ea96120f3e04d7943d7}{%
+           family={Jovanovic},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0a0589b9374874d65f32082620c027f1}{%
+           family={Kreuzer},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{69d9630ef17d8f2ed754b51391534c6a}
+      \strng{fullhash}{69d9630ef17d8f2ed754b51391534c6a}
+      \strng{bibnamehash}{69d9630ef17d8f2ed754b51391534c6a}
+      \strng{authorbibnamehash}{69d9630ef17d8f2ed754b51391534c6a}
+      \strng{authornamehash}{69d9630ef17d8f2ed754b51391534c6a}
+      \strng{authorfullhash}{69d9630ef17d8f2ed754b51391534c6a}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Groups Complexity Cryptology}}
+      \field{title}{{Algebraic Attacks using SAT-Solvers}}
+      \field{volume}{2}
+      \field{year}{2010}
+      \field{pages}{247\bibrangedash 259}
+      \range{pages}{13}
+    \endentry
+    \entry{KreuzerRobbianoBook1}{book}{}
+      \name{author}{2}{}{%
+        {{hash=0a0589b9374874d65f32082620c027f1}{%
+           family={Kreuzer},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0f2527ee6d32564bcafa338c2e8ca205}{%
+           family={Robbiano},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{fullhash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{bibnamehash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{authorbibnamehash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{authornamehash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{authorfullhash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computational {C}ommutative {A}lgebra 1}
+      \field{year}{2000}
+    \endentry
+    \entry{KreuzerRobbianoBook2}{book}{}
+      \name{author}{2}{}{%
+        {{hash=0a0589b9374874d65f32082620c027f1}{%
+           family={Kreuzer},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0f2527ee6d32564bcafa338c2e8ca205}{%
+           family={Robbiano},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{fullhash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{bibnamehash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{authorbibnamehash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{authornamehash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \strng{authorfullhash}{692c0d4c7e4f5610a884fb1b0be932d2}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computational {C}ommutative {A}lgebra 2}
+      \field{year}{2005}
+    \endentry
+    \entry{apcocoa}{software}{}
+      \name{author}{1}{}{%
+        {{hash=94f6c8ff66a9c8552b02c73a4dfec6cd}{%
+           family={{The ApCoCoA Team}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{94f6c8ff66a9c8552b02c73a4dfec6cd}
+      \strng{fullhash}{94f6c8ff66a9c8552b02c73a4dfec6cd}
+      \strng{bibnamehash}{94f6c8ff66a9c8552b02c73a4dfec6cd}
+      \strng{authorbibnamehash}{94f6c8ff66a9c8552b02c73a4dfec6cd}
+      \strng{authornamehash}{94f6c8ff66a9c8552b02c73a4dfec6cd}
+      \strng{authorfullhash}{94f6c8ff66a9c8552b02c73a4dfec6cd}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ApCoCoA: Applied Computations in Commutative Algebra}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://apcocoa.uni-passau.de
+      \endverb
+      \verb{url}
+      \verb https://apcocoa.uni-passau.de
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
